@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<main>
+  <section class="card ">
+      <div *ngFor="let list of whatsappcontacts" class="card-body list-group-item list-group-item-action" onclick="showUserDetail()">
+          <div class="user-img"></div>
+          <div class="user-info"> 
+            <h6 class="user-name">
+                {{list.name}}
+            </h6>
+            <p class="user-message">
+                <i *ngIf="whatsappcontacts.lastMessageCheck === 'sent'"class="fas fa-check"></i>
+                <i *ngIf="whatsappcontacts.lastMessageCheck === 'seen'" class="fas fa-check-double"></i>
+                <i *ngIf="whatsappcontacts.lastMessageCheck === 'not delivered'"class="fas fa-clock"></i>
+
+                {{list.message}}
+            </p>                                     
+          </div>
+          <div class="user-last-seen">
+            <p class="message-day">
+                {{list.lastMessageCheck}}
+            </p>
+        </div>
+      </div>
+  </section>
+  <div id="card-detail" class=" text-center" >
+              <div id="show-image" class="card-title" > 
+              </div>
+              <p id="show-name" class="card-text">
+                      <span></span>
+              </p>
+              <h5 id="defult" class="card-text">Please choose a contact to view details </h5>
+             
+              <p id="show-number" class="card-text" >
+                      <span></span>
+              </p>
+              <p id="show-email" class="card-text" > 
+                  <span></span>
+              </p>
+              <p id="show-status" class="card-text">   
+                  <span></span>
+              </p>
+  </div>    
+ 
+</main>
+

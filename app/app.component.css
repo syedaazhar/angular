@@ -1,0 +1,165 @@
+body
+{
+    font-family: 'Exo', sans-serif;
+}
+
+main
+{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 400px 69%;
+}
+
+.card
+{
+    width:100%;
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+    height:100%; 
+    overflow-y: auto;
+    border: 0;
+}
+
+.card-body
+{
+    display: flex;
+    padding: 5px;
+    width: 375px;
+    justify-content: space-around;
+    cursor: pointer;
+    border: 1px solid #f3f3f3;
+    border-bottom: 0;
+    border-radius: 0 !important;
+    padding-left: 1em;
+}
+
+/* .user-img
+{
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+    margin: 7px 0;
+} */
+
+
+.user-info > *
+{
+    margin: 0;
+    
+}
+
+.user-info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex-grow: inherit; */
+    margin: 0 18px;
+}
+
+
+
+.user-name
+{
+    /* margin: 5px 0 6px 0px; */
+}
+
+.user-message
+{
+    /* margin: 0 0 6px 0px;  */
+    font-size: 14px;
+    color: #999999;
+}
+
+.user-last-seen > *
+{
+    margin: 0;
+}
+
+
+.user-last-seen
+{
+    display: flex;
+}
+
+.message-day
+{
+    color: #aaa8a4;
+    font-size: 13px;
+    margin: 5px;
+}
+
+.fas.fa-check-double
+{
+    color: #5acefb;
+    font-size: 12px;
+}
+
+.fas.fa-check, .far.fa-clock
+{
+    font-size: 12px;
+}
+
+#card-detail
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 28px;
+    flex-direction: column;
+    align-items: center;
+    color: #666666;
+}
+
+#show-image
+{
+    width: 200px;
+    height:200px ;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1000px;
+}
+
+#defult
+{
+    margin: 0;
+    padding: 0;
+    color: #aaa8a4
+}
+
+#show-name
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#show-number, #show-email
+{
+    font-size: 14px;
+}
+
+.fas.fa-phone
+{
+    font-weight: 900;
+    font-size: 20px;
+    color: #3c8005;
+    margin-right: 6px;
+}
+
+.far.fa-envelope
+{
+    font-size: 20px;
+    margin: 0 5px 0 13px;
+    color: #843583;
+}
+
+#show-status
+{
+    font-size:13px;
+    margin-left: 18px;
+}
+
+
